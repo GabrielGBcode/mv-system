@@ -15,11 +15,10 @@ export class HomeComponent {
   imageCat: string =
     'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg';
   i: number = 0;
+  lista = ['Fernanda', 'Gabriel', 'Camille', 'Mariana'];
 
   teste() {
     this.count.update((c) => c + 1);
     this.name = 'MV Soul ' + this.count();
-
-    console.log('Olá mundo!');
   }
 }
