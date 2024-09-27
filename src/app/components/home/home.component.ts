@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { UrlCodec } from '@angular/common/upgrade';
+import { HelloWorldService } from '../../services/hello-world.service';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,20 @@ export class HomeComponent {
     'https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg';
   i: number = 0;
   lista = ['Fernanda', 'Gabriel', 'Camille', 'Mariana'];
+
+  constructor(private serices: HelloWorldService) {
+    this.serices.getHelloWorld().subscribe({
+      next: (data) => {
+        console.log(data);
+      },
+      error: (err) => {
+        console.log(err);
+      },
+      complete: () => {
+        console.log('complete');
+      },
+    });
+  }
 
   teste() {
     this.count.update((c) => c + 1);
