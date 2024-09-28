@@ -11,15 +11,15 @@ export class HomeComponent {
   systems: { name: string; link: string }[] = [
     {
       name: 'SoulMV',
-      link: '/soulmv',
+      link: 'soulmv',
     },
     {
       name: 'MVPEP',
-      link: '/mvpep',
+      link: 'mvpep',
     },
     {
       name: 'PortalRH',
-      link: '/portalrh',
+      link: 'portalrh',
     },
   ];
 }
