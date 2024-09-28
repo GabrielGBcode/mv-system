@@ -1,0 +1,7 @@
+<div class="container">
+  @for (system of systems; track system.name) {
+  <div class="box">
+    <a [href]="system.link" target="_blank">{{ system.name }}</a>
+  </div>
+  }
+</div>
