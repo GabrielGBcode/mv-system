@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SoulmvComponent } from './soulmv.component';
+import { MvsoulComponent } from './mvsoul.component';
 
-describe('SoulmvComponent', () => {
-  let component: SoulmvComponent;
-  let fixture: ComponentFixture<SoulmvComponent>;
+describe('MvsoulComponent', () => {
+  let component: MvsoulComponent;
+  let fixture: ComponentFixture<MvsoulComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SoulmvComponent]
+      imports: [MvsoulComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SoulmvComponent);
+    fixture = TestBed.createComponent(MvsoulComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
