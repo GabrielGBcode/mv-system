@@ -22,4 +22,8 @@ export class HomeComponent {
       link: 'portalrh',
     },
   ];
+
+  navigateTo(link: string) {
+    window.open(link, '_blank');
+  }
 }

@@ -5,6 +5,11 @@
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
 
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: #0000ff;

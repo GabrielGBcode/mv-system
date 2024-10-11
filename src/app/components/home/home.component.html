@@ -3,8 +3,8 @@
 <div class="container">
   @for (system of systems; track system.name) {
   <div class="box">
-    <button type="button">
-      <a [href]="system.link" target="_blank">{{ system.name }}</a>
+    <button type="button" (click)="navigateTo(system.link)">
+      {{ system.name }}
     </button>
   </div>
   }
