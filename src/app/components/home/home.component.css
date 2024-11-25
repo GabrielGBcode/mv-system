@@ -6,11 +6,15 @@
 }
 
 button {
-  padding: 10px 20px;
+  padding: 1rem;
   cursor: pointer;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
 }
 
-a {
-  text-decoration: none;
-  color: #0000ff;
+.container-home {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }

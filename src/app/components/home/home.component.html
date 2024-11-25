@@ -1,8 +1,8 @@
 <h1>MV Saúde - Sistemas</h1>
 
-<div class="container">
+<div class="container-home">
   @for (system of systems; track system.name) {
-  <div class="box">
+  <div class="box-home-system">
     <button type="button" (click)="navigateTo(system.link)">
       {{ system.name }}
     </button>
