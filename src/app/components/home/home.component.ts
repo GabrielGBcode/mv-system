@@ -21,6 +21,14 @@ export class HomeComponent {
       name: 'PortalRH',
       link: 'portalrh',
     },
+    {
+      name: 'MV Painel Recepcao',
+      link: 'mv-recepcao',
+    },
+    {
+      name: 'QRCode',
+      link: 'qrcode',
+    },
   ];
 
   navigateTo(link: string) {

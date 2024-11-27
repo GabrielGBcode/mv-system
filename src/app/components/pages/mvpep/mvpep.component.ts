@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './mvpep.component.html',
-  styleUrl: './mvpep.component.css'
+  styleUrl: './mvpep.component.css',
 })
-export class MvpepComponent {
-
-}
+export class MvpepComponent {}
